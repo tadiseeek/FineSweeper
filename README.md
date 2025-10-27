@@ -20,6 +20,8 @@ Linux and macOS are also supported with the corresponding .NET runtime.
 
 ## Interface
 
+![finesweeper_console-001](https://github.com/user-attachments/assets/12a47cee-35c4-419a-b104-a78f810942f9)
+
 ### Command-line parameters
 
 > finesweeper [width] [height] [mines] [seed]
