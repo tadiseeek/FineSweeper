@@ -1,6 +1,6 @@
 # FineSweeper
 
-Minimalistic functional Mine Sweeper (console, no mutable vars).
+A minimalistic, functional Minesweeper implementation in F# for the terminal. No mutable state, pure console gameplay with colored characters.
 
 ```plain
 >
