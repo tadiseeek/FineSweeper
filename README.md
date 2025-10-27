@@ -12,6 +12,7 @@ A minimalistic, functional Minesweeper implementation in F# for the terminal. No
 - [Interface](#interface)
     - [Command-line parameters](#command-line-parameters)
     - [In-Game Commands](#in-game-commands)
+- [How-To Build Release](#how-to-build-release)
 
 **System requirements:** Windows 10 x64, .NET Desktop Runtime 9.0.\
 Linux and macOS are also supported with the corresponding .NET runtime.
@@ -58,4 +59,10 @@ For example:
 |> r a 1
 |> f e 3
 |> q
+```
+
+## How-To Build Release
+
+```shell
+dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true -p:PublishTrimmed=true
 ```
